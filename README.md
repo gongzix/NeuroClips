@@ -11,10 +11,10 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
 ## Quick Demos
 <table class="center">
       <tr style="line-height: 0">
-      <td colspan="2" style="border: none; text-align: center">GT    Ours</td>
-      <td colspan="2" style="border: none; text-align: center">GT    Ours</td>
-      <td colspan="2" style="border: none; text-align: center">GT    Ours</td>
-      <td colspan="2" style="border: none; text-align: center">GT    Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       </tr>
       <tr>
       <td style="border: none"><img src="assets/samples/0-a-car-is-driving-down-the-road,-8k-uhd,-dslr,.gif"></td>
@@ -27,10 +27,10 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td style="border: none"><img src="assets/samples/281.gif"></td>
       </tr>
       <tr style="line-height: 0">
-      <td colspan="2" style="border: none; text-align: center">GT    Ours</td>
-      <td colspan="2" style="border: none; text-align: center">GT    Ours</td>
-      <td colspan="2" style="border: none; text-align: center">GT    Ours</td>
-      <td colspan="2" style="border: none; text-align: center">GT    Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       </tr>
       <tr>
       <td style="border: none"><img src="assets/samples/0-a-car-is-driving-down-the-road,-8k-uhd,-dslr,.gif"></td>
