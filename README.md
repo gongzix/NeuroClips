@@ -16,10 +16,10 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       </tr>
       <tr>
-      <td style="border: none"><img src="assets/samples/gt_93.gif"></td>
-      <td style="border: none"><img src="assets/samples/93.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_94.gif"></td>
       <td style="border: none"><img src="assets/samples/94.gif"></td>
-      <td style="border: none"><img src="assets/samples/95.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_281.gif"></td>
+      <td style="border: none"><img src="assets/samples/281.gif"></td>
       <td style="border: none"><img src="assets/samples/gt_108.gif"></td>
       <td style="border: none"><img src="assets/samples/108.gif"></td>
       </tr>
@@ -29,10 +29,10 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       </tr>
       <tr>
-      <td style="border: none"><img src="assets/samples/0-a-car-is-driving-down-the-road,-8k-uhd,-dslr,.gif"></td>
-      <td style="border: none"><img src="assets/samples/93.gif"></td>
-      <td style="border: none"><img src="assets/samples/94.gif"></td>
-      <td style="border: none"><img src="assets/samples/95.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_22.gif"></td>
+      <td style="border: none"><img src="assets/samples/22.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_11.gif"></td>
+      <td style="border: none"><img src="assets/samples/11.gif"></td>
       <td style="border: none"><img src="assets/samples/96.gif"></td>
       <td style="border: none"><img src="assets/samples/108.gif"></td>
       </tr>
