@@ -33,8 +33,8 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td style="border: none"><img src="assets/samples/22.gif"></td>
       <td style="border: none"><img src="assets/samples/gt_11.gif"></td>
       <td style="border: none"><img src="assets/samples/11.gif"></td>
-      <td style="border: none"><img src="assets/samples/96.gif"></td>
-      <td style="border: none"><img src="assets/samples/108.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_180.gif"></td>
+      <td style="border: none"><img src="assets/samples/180.gif"></td>
       </tr>
   </table>
 
