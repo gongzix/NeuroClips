@@ -15,7 +15,6 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       </tr>
-      <tr>
       <td style="border: none"><img src="assets/samples/gt_94.gif"></td>
       <td style="border: none"><img src="assets/samples/94.gif"></td>
       <td style="border: none"><img src="assets/samples/gt_281.gif"></td>
@@ -28,11 +27,22 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       </tr>
-      <tr>
       <td style="border: none"><img src="assets/samples/gt_22.gif"></td>
       <td style="border: none"><img src="assets/samples/22.gif"></td>
       <td style="border: none"><img src="assets/samples/gt_11.gif"></td>
       <td style="border: none"><img src="assets/samples/11.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_180.gif"></td>
+      <td style="border: none"><img src="assets/samples/180.gif"></td>
+      </tr>
+      <tr style="line-height: 0">
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      </tr>
+      <td style="border: none"><img src="assets/samples/gt_24.gif"></td>
+      <td style="border: none"><img src="assets/samples/24.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_555.gif"></td>
+      <td style="border: none"><img src="assets/samples/555.gif"></td>
       <td style="border: none"><img src="assets/samples/gt_180.gif"></td>
       <td style="border: none"><img src="assets/samples/180.gif"></td>
       </tr>
