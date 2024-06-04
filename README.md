@@ -95,4 +95,12 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td style="border: none"><img src="assets/samples/284.gif"></td>
   </table>
 
+
 ### *Multi-fMRI Fusion*
+
+## Fail Cases
+Overall the fail cases can be divided into two categories: on the one hand, the semantics are not accurate enough and on the other hand, the scene transition affects the generated results.
+### *Pixel Control & Semantic Deficit*
+In CC2017 dataset, the video clips in the testing movie were different from those in the training movie, and there were even some categories of objects that didn't appear in the training set.
+
+### *Scene Transitions*
