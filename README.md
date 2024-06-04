@@ -80,5 +80,18 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
   </table>
 
 ## Natural Scene
+<table class="center">
+      <tr style="line-height: 0">
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      </tr>
+      <td style="border: none"><img src="assets/samples/gt_700.gif"></td>
+      <td style="border: none"><img src="assets/samples/700.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_702.gif"></td>
+      <td style="border: none"><img src="assets/samples/702.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_284.gif"></td>
+      <td style="border: none"><img src="assets/samples/284.gif"></td>
+  </table>
 
 ## Multi-fMRI Fusion
