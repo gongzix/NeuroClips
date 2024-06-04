@@ -8,11 +8,11 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
 ## Method
 ![model](assets/model.png)
 
-## Demos
+## Reconstruction Demos
 ### *Human Behavior*
 <table class="center">
       <tr style="line-height: 0">
-      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td width=25% style="border: none; text-align: center">GroundTruth</td> <td width=25% style="border: none; text-align: center">Ours</td>
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
       </tr>
