@@ -8,7 +8,8 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
 ## Method
 ![model](assets/model.png)
 
-## Human Behavior
+## Demos
+### Human Behavior
 <table class="center">
       <tr style="line-height: 0">
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
@@ -36,7 +37,7 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       </tr>
   </table>
 
-## Animals
+### Animals
 <table class="center">
       <tr style="line-height: 0">
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
@@ -64,7 +65,7 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       </tr>
   </table>
 
-## Traffic
+### Traffic
 <table class="center">
       <tr style="line-height: 0">
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
@@ -79,7 +80,7 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td style="border: none"><img src="assets/samples/180.gif"></td>
   </table>
 
-## Natural Scene
+### Natural Scene
 <table class="center">
       <tr style="line-height: 0">
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
@@ -94,4 +95,4 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td style="border: none"><img src="assets/samples/284.gif"></td>
   </table>
 
-## Multi-fMRI Fusion
+### Multi-fMRI Fusion
