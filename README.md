@@ -77,21 +77,10 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
       <td style="border: none"><img src="assets/samples/555.gif"></td>
       <td style="border: none"><img src="assets/samples/gt_281.gif"></td>
       <td style="border: none"><img src="assets/samples/281.gif"></td>
-      </tr>
-      <tr style="line-height: 0">
-      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
-      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
-      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
-      </tr>
       <td style="border: none"><img src="assets/samples/gt_180.gif"></td>
       <td style="border: none"><img src="assets/samples/180.gif"></td>
-      <td style="border: none"><img src="assets/samples/gt_784.gif"></td>
-      <td style="border: none"><img src="assets/samples/784.gif"></td>
-      <td style="border: none"><img src="assets/samples/gt_216.gif"></td>
-      <td style="border: none"><img src="assets/samples/216.gif"></td>
-      </tr>
   </table>
 
-
+## Natural Scene
 
 ## Multi-fMRI Fusion
