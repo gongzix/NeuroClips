@@ -104,3 +104,14 @@ Overall the fail cases can be divided into two categories: on the one hand, the 
 In CC2017 dataset, the video clips in the testing movie were different from those in the training movie, and there were even some categories of objects that didn't appear in the training set.
 
 ### *Scene Transitions*
+<table class="center">
+      <tr style="line-height: 0">
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
+      </tr>
+      <td style="border: none"><img src="assets/samples/gt_97.gif"></td>
+      <td style="border: none"><img src="assets/samples/97.gif"></td>
+      <td style="border: none"><img src="assets/samples/gt_281.gif"></td>
+      <td style="border: none"><img src="assets/samples/281.gif"></td>
+  </table>
