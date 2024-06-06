@@ -119,6 +119,7 @@ In CC2017 dataset, the video clips in the testing movie were different from thos
   </table>
 
 ### *Scene Transitions*
+Due to the low-temporal resolution of fMRI (i.e., 2s), a segment of fMRI may include two video scenes, leading to semantic confusion in the video reconstruction, or even semantic and perceptual fusion, as shown in the following image of a jellyfish transitioning to the moon, which ultimately generates a jellyfish with a black background.
 <table class="center">
       <tr style="line-height: 0">
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
