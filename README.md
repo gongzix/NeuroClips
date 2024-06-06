@@ -97,6 +97,7 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
 
 
 ### *Multi-fMRI Fusion*
+With the help of NeuroClips’ SR, we explored the generation of longer videos for the first time. Since the technical field of long video generation is still immature, we chose a more straightforward fusion strategy that does not require additional GPU training. In the inference process, we consider the semantic similarity of two reconstructed keyframes from two neighboring fMRI samples (here we directly determine whether they belong to the same class of objects, e.g., both are jellyfish). If semantically similar, we replace the keyframe of the latter fMRI with the tail-frame of the former fMRI’s reconstructed video, which will be taken as the first-frame of the latter fMRI to generate the video.
 https://github.com/gongzix/NeuroClips/assets/149368983/65e9147d-e30c-47f2-bcad-e5e3d43d6810
 
 
