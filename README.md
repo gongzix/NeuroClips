@@ -97,7 +97,7 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
 
 
 ### *Multi-fMRI Fusion*
-<video controls>
+<video>
   <source src="assets/samples/multi-fmri.mp4" type="video/mp4">
 </video>
 
