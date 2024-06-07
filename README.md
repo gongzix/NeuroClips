@@ -97,12 +97,20 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
 
 
 ### *Multi-fMRI Fusion*
+<<<<<<< HEAD
 ![fusion](assets/samples/multi-fmri.gif)
+=======
+With the help of NeuroClips’ SR, we explored the generation of longer videos for the first time. Since the technical field of long video generation is still immature, we chose a more straightforward fusion strategy that does not require additional GPU training. In the inference process, we consider the semantic similarity of two reconstructed keyframes from two neighboring fMRI samples (here we directly determine whether they belong to the same class of objects, e.g., both are jellyfish). If semantically similar, we replace the keyframe of the latter fMRI with the tail-frame of the former fMRI’s reconstructed video, which will be taken as the first-frame of the latter fMRI to generate the video.
+
+https://github.com/gongzix/NeuroClips/assets/149368983/65e9147d-e30c-47f2-bcad-e5e3d43d6810
+
+
+>>>>>>> 71f5d4c686de5b8a8a00de8ace1e12a9ef7f9a0c
 
 ## Fail Cases
 Overall the fail cases can be divided into two categories: on the one hand, the semantics are not accurate enough and on the other hand, the scene transition affects the generated results.
 ### *Pixel Control & Semantic Deficit*
-In CC2017 dataset, the video clips in the testing movie were different from those in the training movie, and there were even some categories of objects that didn't appear in the training set.
+In CC2017 dataset, the video clips in the testing movie were different from those in the training movie, and there were even some categories of objects that didn't appear in the training set. However thanks to NeuroClips' Perceptual Reconstructor, we can still reconstruct the video at a low-level of vision.
 <table class="center">
       <tr style="line-height: 0">
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
@@ -115,6 +123,7 @@ In CC2017 dataset, the video clips in the testing movie were different from thos
   </table>
 
 ### *Scene Transitions*
+Due to the low-temporal resolution of fMRI (i.e., 2s), a segment of fMRI may include two video scenes, leading to semantic confusion in the video reconstruction, or even semantic and perceptual fusion, as shown in the following image of a jellyfish transitioning to the moon, which ultimately generates a jellyfish with a black background.
 <table class="center">
       <tr style="line-height: 0">
       <td colspan="1" style="border: none; text-align: center">GT</td> <td colspan="1" style="border: none; text-align: center">Ours</td>
