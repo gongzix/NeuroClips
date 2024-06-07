@@ -97,10 +97,7 @@ Evaluated on a publicly available fMRI-video dataset, NeuroClips achieves smooth
 
 
 ### *Multi-fMRI Fusion*
-![fusion](assets/samples/multi-fmri.mp4)
-<video controls>
-<source src="assets/samples/multi-fmri.mp4" type="video/mp4">
-</video>
+![fusion](assets/samples/multi-fmri.gif)
 
 ## Fail Cases
 Overall the fail cases can be divided into two categories: on the one hand, the semantics are not accurate enough and on the other hand, the scene transition affects the generated results.
