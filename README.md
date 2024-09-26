@@ -1,4 +1,4 @@
-# <font color='blue' size=4>**NeurIPS 2024 Oral**:</font> NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction
+# NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction
 NeuroClips is a novel framework for high-quality and smooth fMRI-to-video reconstruction. 
 ## Abstract
 Reconstruction of static visual stimuli from non-invasion brain activity fMRI achieves great success, owning to advanced deep learning models such as CLIP and Stable Diffusion. However, the research on fMRI-to-video reconstruction remains limited since decoding the spatiotemporal perception of continuous visual experiences is formidably challenging. We contend that the key to addressing these challenges lies in accurately decoding both high-level semantics and low-level perception flows, as perceived by the brain in response to video stimuli.
