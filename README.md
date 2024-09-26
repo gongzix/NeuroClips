@@ -2,6 +2,7 @@
 NeuroClips is a novel framework for high-quality and smooth fMRI-to-video reconstruction. 
 
 ## News
+- Codes will be available in the next months
 - Sep. 26, 2024. Accepted by NeurIPS 2024 for Oral Presentation. 
 - May. 24, 2024. Project release.
 
