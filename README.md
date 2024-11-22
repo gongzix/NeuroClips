@@ -1,6 +1,8 @@
-# NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction(NeurIPS 2024)
-NeuroClips is a novel framework for high-quality and smooth fMRI-to-video reconstruction. 
+<h5 align="center">
+# NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction
+NeuroClips is a novel framework for high-quality and smooth fMRI-to-video reconstruction (NeurIPS 2024).
 
+<h5 align="center">
 [![arxiv](https://img.shields.io/badge/Arxiv-2410.19452-red)](https://arxiv.org/pdf/2410.19452)
 
 ## Abstract
