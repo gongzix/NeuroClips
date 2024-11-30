@@ -15,7 +15,7 @@ NeuroClips is a novel framework for high-quality and smooth fMRI-to-video recons
 - May. 24, 2024. Project release.
 
 ## Data Preprocessing
-We use the cc2017 dataset from [this](https://purr.purdue.edu/publications/2809/1)
+We use the cc2017(Wen et al, 2017) dataset from [this](https://purr.purdue.edu/publications/2809/1), you can download and follow the [official preprocess](./preprocess/preprocess_code/ReadMe.pdf)
 
 ## Reconstruction Demos
 ### *Human Behavior*
