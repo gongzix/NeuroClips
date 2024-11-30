@@ -1,8 +1,6 @@
 <h3 align="center">
 NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction
-</h3>
 
-<h3 align="center">
 [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=model&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/) &ensp;
 [![arxiv](https://img.shields.io/badge/Arxiv-2410.19452-red)](https://arxiv.org/pdf/2410.19452)
 </h3>
