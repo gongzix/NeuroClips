@@ -8,10 +8,10 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/gongzix/NeuroClips)
 </h5>
 
-## Method
+## 🛠️ Method
 ![model](assets/model.png)
 
-## News
+## 📣 News
 - Codes will be available in the next months
 - Sep. 26, 2024. Accepted by NeurIPS 2024 for Oral Presentation. 
 - May. 24, 2024. Project release.
