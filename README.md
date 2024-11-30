@@ -21,7 +21,7 @@ We use the public cc2017(Wen) dataset from [this](https://purr.purdue.edu/public
 
 We also offer our pre-processed fMRI data and frames sampled from videos for training in NeuroClips, and you can directly download them from [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Dataset&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/)
 
-## Reconstruction Demos
+## 🖼️ Reconstruction Demos
 ### *Human Behavior*
 <table class="center">
       <tr style="line-height: 0">
