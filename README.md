@@ -1,6 +1,6 @@
-## <h3 align="center"> NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction <div align=center> </a></h3>
+<h3 align="center"> NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction <div align=center> </a></h3>
 
-<h5 align="center"> NeuroClips is a novel framework for fMRI-to-video decoding (NeurIPS 2024 Oral). If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
+## <h5 align="center"> NeuroClips is a novel framework for fMRI-to-video decoding (NeurIPS 2024 Oral). If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
 <h5 align="center">
 
