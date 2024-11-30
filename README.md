@@ -15,7 +15,9 @@ NeuroClips is a novel framework for high-quality and smooth fMRI-to-video recons
 - May. 24, 2024. Project release.
 
 ## Data Preprocessing
-We use the cc2017(Wen et al, 2017) dataset from [this](https://purr.purdue.edu/publications/2809/1), you can download and follow the [official preprocess](./preprocess/preprocess_code/ReadMe.pdf)
+We use the cc2017(Wen et al, 2017) dataset from [this](https://purr.purdue.edu/publications/2809/1). You can download and follow the [official preprocess](./preprocess/preprocess_code/ReadMe.pdf) to only deal with your fMRI data. Mention that only using `movie_fmri_data_processing.m` and `movie_fmri_reproducibility.m`, and notice that the selected voxels(Bonferroni correction, P < 0.05) were more than before(Bonferroni correction, P < 0.01).
+
+We also offer our pre-processed fMRI data and frames sampled from videos, and you can directly download it from [google drive](https://drive.google.com/drive/folders/1E8jF2AKjQ56BZ6ErMAbXyorODEZg1xAS?usp=sharing)
 
 ## Reconstruction Demos
 ### *Human Behavior*
