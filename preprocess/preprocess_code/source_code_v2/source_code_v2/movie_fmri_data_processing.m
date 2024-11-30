@@ -63,7 +63,7 @@ Nv = 59412; % number of vertices on the cortical surface
 Nt = 240;  % number of volumes
 Ns = 18; % number of training movie segments
 
-fmripath = 'C:/Users/44545/fMRI/10_4231_R7X63K3M/10_4231_R7X63K3M/bundle/video_fmri_dataset/subject1/fmri/'; % path to the cifti files
+fmripath = './video_fmri_dataset/subject1/fmri/'; % path to the cifti files
 fmri.data1 = zeros(Nv,Nt,Ns,'single');% use single to save memory  
 fmri.data2 = zeros(Nv,Nt,Ns,'single');
 Rmat = zeros(Nv,Ns); 
@@ -122,7 +122,7 @@ save([fmripath,'training_fmri.mat'], 'fmri', 'Rmat');
 %% Put all testing segments together
 Nv = 59412; % number of vertices on the cortical surface
 Nt = 240;  % number of volumes
-fmripath = 'C:/Users/44545/fMRI/10_4231_R7X63K3M/10_4231_R7X63K3M/bundle/video_fmri_dataset/subject1/fmri/'; % path to the cifti files
+fmripath = './video_fmri_dataset/subject1/fmri/'; % path to the cifti files
 fmritest.test1 = zeros(Nv,Nt,10,'single');
 fmritest.test2 = zeros(Nv,Nt,10,'single');
 fmritest.test3 = zeros(Nv,Nt,10,'single');

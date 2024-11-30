@@ -13,7 +13,7 @@
 % Nv: number of voxels, Nv = 59412.
 % Nt: number of volumes for one movie segment, Nt = 240.
 % Ns: number of movie segments, Ns = 18.
-load('D:/Something/研二下/voxel_select/subj03_training_fmri.mat','fmri'); % from movie_fmri_processing.m
+load('./voxel_select/subj03_training_fmri.mat','fmri'); % from movie_fmri_processing.m
  
 % Calculate the voxelwise correlation between the responses to the same movie for the
 % first time and the second time.
@@ -30,4 +30,4 @@ end
 % Fisher's r-to-z-transformation
 Zmat = amri_sig_r2z(Rmat);
 
-save('D:/Something/研二下/voxel_select/subj03_training_Zscore.mat','Zmat')
+save('./voxel_select/subj03_training_Zscore.mat','Zmat')
