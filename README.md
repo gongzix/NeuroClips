@@ -1,5 +1,6 @@
 <h3 align="center"> NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction <div align=center> </a></h3>
-NeuroClips is a novel framework for high-quality and smooth fMRI-to-video reconstruction (NeurIPS 2024 Oral).
+<h5 align="center"> NeuroClips is a novel framework for high-quality and smooth fMRI-to-video reconstruction (NeurIPS 2024 Oral).</h5>
+
 <h5 align="center">
 
 [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Model&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/) &ensp;
