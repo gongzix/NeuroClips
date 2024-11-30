@@ -4,8 +4,9 @@
 
 [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Model&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/) &ensp;
 [![arxiv](https://img.shields.io/badge/Arxiv-2410.19452-red)](https://arxiv.org/pdf/2410.19452)
+![GitHub Repo stars](https://img.shields.io/github/stars/gongzix/NeuroClips)
 </h3>
-NeuroClips is a novel framework for high-quality and smooth fMRI-to-video reconstruction ( ** NeurIPS 2024 Oral ** ).
+NeuroClips is a novel framework for high-quality and smooth fMRI-to-video reconstruction (NeurIPS 2024 Oral).
 
 
 ## Method
