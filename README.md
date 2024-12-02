@@ -171,7 +171,7 @@ Due to the low-temporal resolution of fMRI (i.e., 2s), a segment of fMRI may inc
   </table>
 
 ## BibTeX
-```python
+```
 @article{gong2024neuroclips,
   title={NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction},
   author={Gong, Zixuan and Bao, Guangyin and Zhang, Qi and Wan, Zhongwei and Miao, Duoqian and Wang, Shoujin and Zhu, Lei and Wang, Changwei and Xu, Rongtao and Hu, Liang and others},
