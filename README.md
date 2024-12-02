@@ -29,17 +29,22 @@ For Neuroclips:
 ```python
 . src/setup.sh
 ```
-For pre-trained AnimateDiffusion, you can follow [this](https://github.com/guoyww/AnimateDiff)
+For pre-trained AnimateDiffusion, you can follow [this](https://github.com/guoyww/AnimateDiff).
 ## Training_SR
 We suggest training the backbone first and then the prior to achieve better Semantic Reconstructor.
 ```python
-python train_SR.py --subj 1 --batch_size 240 --num_epochs 30 --mixup_pct 1.0 --max_lr 1e-4
-python train_SR.py --subj 1 --batch_size 64 --num_epochs 150 --mixup_pct 0.0 --max_lr 3e-4 --use_prior
+python src/train_SR.py --subj 1 --batch_size 240 --num_epochs 30 --mixup_pct 1.0 --max_lr 1e-4
+python src/train_SR.py --subj 1 --batch_size 64 --num_epochs 150 --mixup_pct 0.0 --max_lr 3e-4 --use_prior
 ```
 
 ## Training_PR
 ```python
-python train_PR.py --subj 1 --batch_size 40 --mixup_pct 0.0 --num_epochs 80
+python src/train_PR.py --subj 1 --batch_size 40 --mixup_pct 0.0 --num_epochs 80
+```
+
+## Reconstruct Keyframe
+```python
+python src/recon_keyframe.py --subj 1
 ```
 
 ## 🖼️ Reconstruction Demos
