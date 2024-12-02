@@ -13,7 +13,7 @@
 ![model](assets/model.png)
 
 ## 📣 News
-- Training Codes will be available in this week.
+- Full Codes will be available in this week.
 - Nov. 30, 2024. Pre-processed code and dataset release.
 - Sep. 26, 2024. Accepted by NeurIPS 2024 for Oral Presentation. 
 - May. 24, 2024. Project release.
@@ -21,9 +21,9 @@
 ## Data Preprocessing
 We use the public cc2017(Wen) dataset from [this](https://purr.purdue.edu/publications/2809/1). You can download and follow the [official preprocess](./preprocess/preprocess_code/ReadMe.pdf) to only deal with your fMRI data. Only use `movie_fmri_data_processing.m` and `movie_fmri_reproducibility.m`, and notice that the selected voxels(Bonferroni correction, P < 0.05) were more than before(Bonferroni correction, P < 0.01).
 
-We also offer our pre-processed fMRI data and frames sampled from videos for training in NeuroClips, and you can directly download them from [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Dataset&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/)
+We also offer our pre-processed fMRI data and frames sampled from videos for training in NeuroClips, and you can directly download them from [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Dataset&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/).
 
-**Warning**❗: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/). Thus, we have excluded the pre-processed captions here. Otherwise, you can use `python src/caption.py` to generate captions.
+**Warning**❗: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/39). Thus, we have excluded the pre-processed captions here. Otherwise, you can use `python src/caption.py` to generate captions.
 
 ## Installation
 Due to the conflict issue of different environment package versions, we recommend using the virtual environment for Neuroclips training, inference keyframes, and blurry videos separately from the pre-trained T2V diffusion's virtual environment.
@@ -36,7 +36,7 @@ For pre-trained AnimateDiffusion, you can follow [this](https://github.com/guoyw
 ## Train Semantic Reconstructor
 We suggest training the backbone first and then the prior to achieve better Semantic Reconstructor.
 
-**Warning**❗: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/). Thus, we have excluded the text enhancement here. Once available, we will make corrections.
+**Warning**❗: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/39). Thus, we have excluded the text enhancement here. Once available, we will make corrections.
 ```python
 python src/train_SR.py --subj 1 --batch_size 240 --num_epochs 30 --mixup_pct 1.0 --max_lr 1e-4
 python src/train_SR.py --subj 1 --batch_size 64 --num_epochs 150 --mixup_pct 0.0 --max_lr 3e-4 --use_prior
@@ -52,6 +52,10 @@ python src/train_PR.py --subj 1 --batch_size 40 --mixup_pct 0.0 --num_epochs 80
 python src/recon_keyframe.py --subj 1
 ```
 
+## Reconstruct Blurry Video
+```python
+python src/recon_blurry.py --subj 1
+```
 ## 🖼️ Reconstruction Demos
 ### *Human Behavior*
 <table class="center">
