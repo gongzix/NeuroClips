@@ -26,7 +26,7 @@ We also offer our pre-processed fMRI data and frames sampled from videos for tra
 **Warning**❗: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/39). Thus, we have excluded the pre-processed captions here. Otherwise, you can use `python src/caption.py` to generate captions.
 
 ## Installation
-Due to the conflict issue of different environment package versions, we recommend using the virtual environment for Neuroclips training, inference keyframes, and blurry videos separately from the pre-trained T2V diffusion's virtual environment.
+We recommend using the virtual environment for Neuroclips training, inference keyframes, and blurry videos separately from the pre-trained T2V diffusion's virtual environment to avoid any conflict issue of different environment package versions.
 
 For Neuroclips:
 ```python
