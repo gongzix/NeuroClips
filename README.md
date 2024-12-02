@@ -32,6 +32,8 @@ For Neuroclips:
 For pre-trained AnimateDiffusion, you can follow [this](https://github.com/guoyww/AnimateDiff).
 ## Training_SR
 We suggest training the backbone first and then the prior to achieve better Semantic Reconstructor.
+
+❗Warning: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/). Thus, we have excluded the text enhancement here. We will make corrections, once available.
 ```python
 python src/train_SR.py --subj 1 --batch_size 240 --num_epochs 30 --mixup_pct 1.0 --max_lr 1e-4
 python src/train_SR.py --subj 1 --batch_size 64 --num_epochs 150 --mixup_pct 0.0 --max_lr 3e-4 --use_prior
