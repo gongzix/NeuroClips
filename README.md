@@ -24,7 +24,7 @@ We use the public cc2017(Wen) dataset from [this](https://purr.purdue.edu/public
 We also offer our pre-processed fMRI data and frames sampled from videos for training in NeuroClips, and you can directly download them from [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Dataset&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/)
 
 ## Installation
-Due to the issue of different environment package versions, we recommend using the virtual environment for Neuroclips training, inference keyframes, and blurry videos separately from the pre trained t2V virtual environment.
+Due to the conflict issue of different environment package versions, we recommend using the virtual environment for Neuroclips training, inference keyframes, and blurry videos separately from the pre-trained T2V diffusion's virtual environment.
 For Neuroclips:
 ```python
 . src/setup.sh
@@ -33,7 +33,7 @@ For pre-trained AnimateDiffusion, you can follow [this](https://github.com/guoyw
 ## Training_SR
 We suggest training the backbone first and then the prior to achieve better Semantic Reconstructor.
 
-❗Warning: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/). Thus, we have excluded the text enhancement here. We will make corrections, once available.
+❗Warning: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/). Thus, we have excluded the text enhancement here. Once available, we will make corrections.
 ```python
 python src/train_SR.py --subj 1 --batch_size 240 --num_epochs 30 --mixup_pct 1.0 --max_lr 1e-4
 python src/train_SR.py --subj 1 --batch_size 64 --num_epochs 150 --mixup_pct 0.0 --max_lr 3e-4 --use_prior
@@ -169,3 +169,12 @@ Due to the low-temporal resolution of fMRI (i.e., 2s), a segment of fMRI may inc
       <td style="border: none"><img src="assets/samples/gt_281.gif"></td>
       <td style="border: none"><img src="assets/samples/281.gif"></td>
   </table>
+
+## Acknowledgement
+We sincerely thank the following authors, and Neuroclips is based on their excellent open-source projects or impressive ideas.
+
+T2V diffusion: https://github.com/guoyww/AnimateDiff
+Excellent Backbone: https://github.com/MedARC-AI/MindEyeV2
+Temporal Design: https://arxiv.org/abs/2304.08818
+Keyframe Captioning: https://github.com/salesforce/LAVIS/tree/main/projects/blip2
+Dataset and Pre-processed code: https://purr.purdue.edu/publications/2809
