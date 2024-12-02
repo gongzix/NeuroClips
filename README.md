@@ -174,7 +174,11 @@ Due to the low-temporal resolution of fMRI (i.e., 2s), a segment of fMRI may inc
 We sincerely thank the following authors, and Neuroclips is based on their excellent open-source projects or impressive ideas.
 
 T2V diffusion: https://github.com/guoyww/AnimateDiff
+
 Excellent Backbone: https://github.com/MedARC-AI/MindEyeV2
+
 Temporal Design: https://arxiv.org/abs/2304.08818
+
 Keyframe Captioning: https://github.com/salesforce/LAVIS/tree/main/projects/blip2
+
 Dataset and Pre-processed code: https://purr.purdue.edu/publications/2809
