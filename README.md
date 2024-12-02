@@ -23,6 +23,25 @@ We use the public cc2017(Wen) dataset from [this](https://purr.purdue.edu/public
 
 We also offer our pre-processed fMRI data and frames sampled from videos for training in NeuroClips, and you can directly download them from [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Dataset&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/)
 
+## Installation
+Due to the issue of different environment package versions, we recommend using the virtual environment for Neuroclips training, inference keyframes, and blurry videos separately from the pre trained t2V virtual environment.
+For Neuroclips:
+```python
+. src/setup.sh
+```
+For pre-trained AnimateDiffusion, you can follow [this](https://github.com/guoyww/AnimateDiff)
+## Training_SR
+We suggest training the backbone first and then the prior to achieve better Semantic Reconstructor.
+```python
+python train_SR.py --subj 1 --batch_size 240 --num_epochs 30 --mixup_pct 1.0 --max_lr 1e-4
+python train_SR.py --subj 1 --batch_size 64 --num_epochs 150 --mixup_pct 0.0 --max_lr 3e-4 --use_prior
+```
+
+## Training_PR
+```python
+python train_PR.py --subj 1 --batch_size 40 --mixup_pct 0.0 --num_epochs 80
+```
+
 ## 🖼️ Reconstruction Demos
 ### *Human Behavior*
 <table class="center">
