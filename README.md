@@ -23,6 +23,11 @@ We use the public cc2017(Wen) dataset from [this](https://purr.purdue.edu/public
 
 We also offer our pre-processed fMRI data and frames sampled from videos for training in NeuroClips, and you can directly download them from [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Dataset&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/)
 
+**Warning**❗: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/). Thus, we have excluded the text enhancement here. Once available, we will make corrections. Otherwise, you can use 
+```python
+python src/caption.py
+```
+
 ## Installation
 Due to the conflict issue of different environment package versions, we recommend using the virtual environment for Neuroclips training, inference keyframes, and blurry videos separately from the pre-trained T2V diffusion's virtual environment.
 For Neuroclips:
