@@ -13,7 +13,8 @@
 ![model](assets/model.png)
 
 ## 📣 News
-- Codes will be available in the next months
+- Training Codes will be available in this week.
+- Nov. 30, 2024. Pre-processed code and dataset release.
 - Sep. 26, 2024. Accepted by NeurIPS 2024 for Oral Presentation. 
 - May. 24, 2024. Project release.
 
