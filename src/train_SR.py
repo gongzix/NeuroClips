@@ -289,7 +289,7 @@ utils.count_params(model)
 
 
 if use_prior:
-    from models import *
+    from Semantic import *
 
     # setup diffusion prior network
     out_dim = clip_emb_dim
@@ -348,9 +348,6 @@ else:
     model.clipproj = CLIPProj()
     utils.count_params(model.ridge)
     utils.count_params(model)
-
-
-
 
 
 
