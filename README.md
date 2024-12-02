@@ -34,6 +34,8 @@ For Neuroclips:
 ```
 For pre-trained AnimateDiffusion, you can follow [this](https://github.com/guoyww/AnimateDiff):
 ```python
+conda create -n animatediff python==3.10
+conda activate animatediff
 cd AnimateDiff
 pip install -r requirements.txt
 ```
