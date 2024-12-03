@@ -71,6 +71,8 @@ cd Animatediff
 python -m scripts.neuroclips --config configs/NeuroClips/control.yaml
 ```
 
+The pre-trained weights you should prepare are in [here](Animatediff/required_weight.txt).
+
 ## 🖼️ Reconstruction Demos
 ### *Human Behavior*
 <table class="center">
