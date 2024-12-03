@@ -13,7 +13,7 @@
 ![model](assets/model.png)
 
 ## 📣 News
-- Dec. 2, 2024. Full Codes will be available in this week.
+- Dec. 3, 2024. Full Codes release.
 - Nov. 30, 2024. Pre-processed code and dataset release.
 - Sep. 26, 2024. Accepted by NeurIPS 2024 for Oral Presentation. 
 - May. 24, 2024. Project release.
@@ -23,7 +23,7 @@ We use the public cc2017(Wen) dataset from [this](https://purr.purdue.edu/public
 
 We also offer our pre-processed fMRI data and frames sampled from videos for training in NeuroClips, and you can directly download them from [![Huggingface NeuroClips](https://img.shields.io/static/v1?label=Dataset&message=Huggingface&color=orange)](https://huggingface.co/datasets/gongzx/cc2017_dataset/).
 
-**Warning**❗: BLIP-2 isn't available now for the latest version in transformers==v4.47.dev. You can see the latest news in [this](https://huggingface.co/Salesforce/blip2-opt-2.7b/discussions/39). Otherwise, you can use `python src/caption.py` to generate captions.
+You can use `python src/caption.py` to generate the captions.
 
 ## Installation
 We recommend using the virtual environment for Neuroclips training, inference keyframes, and blurry videos separately from the pre-trained T2V diffusion's virtual environment to avoid any conflict issue of different environment package versions.
@@ -57,7 +57,7 @@ python src/train_PR.py --subj 1 --batch_size 40 --mixup_pct 0.0 --num_epochs 80
 ```python
 python src/recon_keyframe.py --subj 1
 ```
-After keyframes are generated, you could use BLIP-2 to get captions.
+After keyframes are generated, you could use BLIP-2:`python src/caption.py` to get captions of keyframes.
 ## Reconstruct Blurry Video
 ```python
 python src/recon_blurry.py --subj 1
