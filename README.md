@@ -57,11 +57,20 @@ python src/train_PR.py --subj 1 --batch_size 40 --mixup_pct 0.0 --num_epochs 80
 ```python
 python src/recon_keyframe.py --subj 1
 ```
-
+After keyframes are generated, you could use BLIP-2 to get captions.
 ## Reconstruct Blurry Video
 ```python
 python src/recon_blurry.py --subj 1
 ```
+
+## Reconstruct Videos
+After preparing all the inputs, you can reconstruct the video. You can use any pre-trained T2V or V2V model. We are using the T2V pre-trained model AnimateDiffusion here, specifically SparseCtrl for first-frame guidance.
+```python
+conda activate animatediff
+cd Animatediff
+python -m scripts.neuroclips --config configs/NeuroClips/control.yaml
+```
+
 ## 🖼️ Reconstruction Demos
 ### *Human Behavior*
 <table class="center">

@@ -1,13 +1,13 @@
 # animation-1
 - domain_lora_scale: 1.0
-  adapter_lora_path: "/users/PAS2490/marcusshen/fMRIVideo_Nips/AnimateDiff/models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_adapter.ckpt"
+  adapter_lora_path: "models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_adapter.ckpt"
   dreambooth_path:   "models/DreamBooth_LoRA/realisticVisionV60B1_v51VAE.safetensors"
 
   inference_config: "configs/inference/inference-v3.yaml"
-  motion_module:    "/users/PAS2490/marcusshen/fMRIVideo_Nips/AnimateDiff/models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_mm.ckpt"
+  motion_module:    "models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_mm.ckpt"
 
   controlnet_config: "configs/inference/sparsectrl/latent_condition.yaml"
-  controlnet_path:   "/users/PAS2490/marcusshen/fMRIVideo_Nips/AnimateDiff/models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_sparsectrl_rgb.ckpt"
+  controlnet_path:   "models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_sparsectrl_rgb.ckpt"
 
   seed: -1
   steps: 25
@@ -15,13 +15,13 @@
 
   controlnet_image_indexs: [0]
   controlnet_images:
-    - "__assets__/demos/image/RealisticVision_firework.png"
+    - ""
 
   prompt:
-    - "closeup face photo of man in black clothes, night city street, bokeh, fireworks in background"
-    - "closeup face photo of man in black clothes, night city street, bokeh, fireworks in background"
+    - ""
+    - ""
   n_prompt:
-    - "worst quality, low quality, letterboxed"
+    - ""
 
 
 
