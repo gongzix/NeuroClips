@@ -7,9 +7,9 @@ import numpy as np
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-processor = Blip2Processor.from_pretrained("Salesforce/blip2-opt-2.7b", cache_dir='/fs/scratch/PAS2490/blip2')
+processor = Blip2Processor.from_pretrained("Salesforce/blip2-opt-2.7b", revision="51572668da0eb669e01a189dc22abe6088589a24", cache_dir='/fs/scratch/PAS2490/blip2')
 model = Blip2ForConditionalGeneration.from_pretrained(
-    "Salesforce/blip2-opt-2.7b", cache_dir='/fs/scratch/PAS2490/blip2', torch_dtype=torch.float16
+    "Salesforce/blip2-opt-2.7b", revision="51572668da0eb669e01a189dc22abe6088589a24", cache_dir='/fs/scratch/PAS2490/blip2', torch_dtype=torch.float16
 )
 model.to(device)
 
