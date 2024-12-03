@@ -179,6 +179,7 @@ elif subj == 3 :
 
 voxel_train = torch.load(f'/fs/scratch/PAS2490/neuroclips/voxel_mask/datasets--gongzx--cc2017_dataset/snapshots/a82b9e20e98710f18913a10c0a5bf5f19a6e4000/subj0{subj}_train_fmri.pt', map_location='cpu')
 voxel_test = torch.load(f'/fs/scratch/PAS2490/neuroclips/voxel_mask/datasets--gongzx--cc2017_dataset/snapshots/a82b9e20e98710f18913a10c0a5bf5f19a6e4000/subj0{subj}_test_fmri.pt', map_location='cpu')
+## Average same-video repeats ##
 voxel_test = torch.mean(voxel_test, dim = 1).unsqueeze(1)
 num_voxels_list = [voxel_train.shape[-1]]
 
@@ -376,8 +377,6 @@ for epoch in progress_bar:
             if use_image_aug: 
                 image = img_augment(image)
 
-            #voxel_ridge_list = [model.ridge(voxel_list[si],si) for si,s in enumerate(subj_list)]
-            #voxel_ridge = torch.cat(voxel_ridge_list, dim=0)
             voxel = model.fmri(voxel).unsqueeze(1)
             voxel_ridge = model.ridge1(voxel,0)
             blurry_image_enc_ = model.backbone(voxel_ridge, time = batch_size*fps*2)
@@ -436,12 +435,8 @@ for epoch in progress_bar:
             for test_i, (voxel, image) in enumerate(test_dl):  
                 # all test samples should be loaded per batch such that test_i should never exceed 0
 
-                ## Average same-image repeats ##
                 if test_image is None:
                     voxel = voxel.half()
-                    
-                    if seq_len==1:
-                        voxel = voxel.unsqueeze(1)
                     
                     image = image.reshape(len(image)*fps*2, 3, 256, 256).cpu()
 

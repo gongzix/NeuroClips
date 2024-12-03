@@ -623,8 +623,7 @@ for epoch in progress_bar:
 
                 ## Average same-image repeats ##
                 if test_image is None:
-                    voxel = voxel.half()
-                    
+                    voxel = voxel.half()                    
                     image = image[:,2,:,:,:].cpu()
 
                 loss=0.
