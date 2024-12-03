@@ -184,19 +184,19 @@ num_voxels_list = [voxel_train.shape[-1]]
 
 train_images = torch.load(f'/fs/scratch/PAS2490/neuroclips/voxel_mask/datasets--gongzx--cc2017_dataset/snapshots/a82b9e20e98710f18913a10c0a5bf5f19a6e4000//GT_train_3fps.pt',map_location='cpu')
 test_images = torch.load(f'/fs/scratch/PAS2490/neuroclips/voxel_mask/datasets--gongzx--cc2017_dataset/snapshots/a82b9e20e98710f18913a10c0a5bf5f19a6e4000/GT_test_3fps.pt',map_location='cpu')
-#train_text = torch.load(f'/fs/scratch/PAS2490/neuroclips/GT_train_caption_emb.pt',map_location='cpu')
-#test_text = torch.load(f'/fs/scratch/PAS2490/neuroclips/GT_test_caption_emb.pt',map_location='cpu')
+train_text = torch.load(f'/fs/scratch/PAS2490/neuroclips/GT_train_caption_emb.pt',map_location='cpu')
+test_text = torch.load(f'/fs/scratch/PAS2490/neuroclips/GT_test_caption_emb.pt',map_location='cpu')
 
 print("Loaded all crucial train frames to cpu!", train_images.shape)
 print("Loaded all crucial test frames to cpu!", test_images.shape)
 
-#print("Loaded all crucial train captions to cpu!", train_text.shape)
-#print("Loaded all crucial test captions to cpu!", test_text.shape)
+print("Loaded all crucial train captions to cpu!", train_text.shape)
+print("Loaded all crucial test captions to cpu!", test_text.shape)
 
 
 train_dl = {}
-train_dataset = CC2017_Dataset(voxel_train, train_images, voxel_train, istrain = True)
-test_dataset = CC2017_Dataset(voxel_test, test_images, voxel_train, istrain = False)
+train_dataset = CC2017_Dataset(voxel_train, train_images, train_text, istrain = True)
+test_dataset = CC2017_Dataset(voxel_test, test_images, test_text, istrain = False)
 train_dl = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=0, drop_last=False)
 test_dl = torch.utils.data.DataLoader(test_dataset, batch_size=300, shuffle=False, num_workers=0, drop_last=False)
 
@@ -465,7 +465,7 @@ for epoch in progress_bar:
     # pre-load all batches for this epoch (it's MUCH faster to pre-load in bulk than to separate loading per batch)
     voxel_iters = {} # empty dict because diff subjects have differing # of voxels
     image_iters = torch.zeros(num_iterations_per_epoch, batch_size, 3, 224, 224).float()
-    #text_iters = torch.zeros(num_iterations_per_epoch, batch_size, 1280).float()
+    text_iters = torch.zeros(num_iterations_per_epoch, batch_size, 1280).float()
     perm_iters, betas_iters, select_iters = {}, {}, {}
     
     for s, train_dl in enumerate(train_dls):
@@ -474,7 +474,7 @@ for epoch in progress_bar:
                 image = image[:,2+epoch%2,:,:,:].float()
                 voxel = voxel[:,epoch%2,:].half().unsqueeze(1)
                 image_iters[iter,s*batch_size:s*batch_size+batch_size] = image
-                #text_iters[iter,s*batch_size:s*batch_size+batch_size] = text
+                text_iters[iter,s*batch_size:s*batch_size+batch_size] = text
 
                 if epoch < int(mixup_pct * num_epochs):
                     voxel, perm, betas, select = utils.mixco(voxel)
@@ -497,7 +497,7 @@ for epoch in progress_bar:
             voxel_list = [voxel_iters[f"subj0{s}_iter{train_i}"].detach().to(device) for s in subj_list]
             voxel_list = [voxel_iters[f"subj0{s}_iter{train_i}"].detach() for s in subj_list]
             image = image_iters[train_i].detach()
-            #text = text_iters[train_i].detach()
+            text = text_iters[train_i].detach()
             image = image.to(device)
 
             if use_image_aug: 
@@ -514,8 +514,6 @@ for epoch in progress_bar:
                 select_list = [select_iters[f"subj0{s}_iter{train_i}"].detach().to(device) for s in subj_list]
                 select = torch.cat(select_list, dim=0)
 
-            #voxel_ridge_list = [model.ridge(voxel_list[si],si) for si,s in enumerate(subj_list)]
-            #voxel_ridge = torch.cat(voxel_ridge_list, dim=0)
             voxel_ridge= model.ridge(voxel_list[0],0) 
 
             _, clip_voxels, blurry_image_enc_ = model.backbone(voxel_ridge)
