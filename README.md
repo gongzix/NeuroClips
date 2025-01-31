@@ -204,7 +204,7 @@ Due to the low-temporal resolution of fMRI (i.e., 2s), a segment of fMRI may inc
 }
 ```
 
-## Acknowledgement
+## Acknowledgements
 We sincerely thank the following authors, and Neuroclips is based on their excellent open-source projects or impressive ideas.
 
 T2V diffusion: https://github.com/guoyww/AnimateDiff
