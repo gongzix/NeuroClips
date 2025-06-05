@@ -112,7 +112,7 @@ elif subj == 2 :
 elif subj == 3 :
     voxel_length = 9114
 
-voxel_test = torch.load(f'/fs/scratch/PAS2490/neuroclips/voxel_mask/datasets--gongzx--cc2017_dataset/snapshots/a82b9e20e98710f18913a10c0a5bf5f19a6e4000/subj0{subj}_train_fmri.pt', map_location='cpu')
+voxel_test = torch.load(f'/fs/scratch/PAS2490/neuroclips/voxel_mask/datasets--gongzx--cc2017_dataset/snapshots/a82b9e20e98710f18913a10c0a5bf5f19a6e4000/subj0{subj}_test_fmri.pt', map_location='cpu')
 voxel_test = torch.mean(voxel_test, dim = 1)
 print("Loaded all fmri test frames to cpu!", voxel_test.shape)
 test_images = torch.load(f'/fs/scratch/PAS2490/neuroclips/voxel_mask/datasets--gongzx--cc2017_dataset/snapshots/a82b9e20e98710f18913a10c0a5bf5f19a6e4000/GT_test_3fps.pt',map_location='cpu')
