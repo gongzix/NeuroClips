@@ -130,7 +130,7 @@ for attribute_name in vars(args).keys():
     
 # seed all random functions
 utils.seed_everything(seed)
-model_name =f'video_subj0{subj}_low_level'
+model_name =f'video_subj0{subj}_PR'
 
 outdir = os.path.abspath(f'/fs/scratch/PAS2490/neuroclips/models/')
 if not os.path.exists(outdir) and ckpt_saving:
