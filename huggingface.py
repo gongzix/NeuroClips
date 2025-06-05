@@ -1,6 +1,3 @@
-cd NeuroClips
-
-python
 from huggingface_hub import snapshot_download, hf_hub_download
 
 # Stable Diffusion v1.5
@@ -19,8 +16,3 @@ hf_hub_download(repo_id="stable-diffusion-v1-5/stable-diffusion-v1-5",subfolder=
 hf_hub_download(repo_id="guoyww/animatediff",filename="v3_sd15_adapter",cache_dir='./Animatediff/models')
 hf_hub_download(repo_id="guoyww/animatediff",filename="v3_sd15_mm.ckpt",cache_dir='./Animatediff/models')
 hf_hub_download(repo_id="guoyww/animatediff",filename="v3_sd15_sparsectrl_rgb.ckpt",cache_dir='./Animatediff/models')
-```
-
-## Download the Motion Weights
-cd Animatediff/download_bashscripts
-bash 5-RealisticVision.sh

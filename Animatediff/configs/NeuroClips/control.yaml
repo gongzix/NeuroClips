@@ -1,13 +1,13 @@
 # animation-1
 - domain_lora_scale: 1.0
-  adapter_lora_path: "models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_adapter.ckpt"
-  dreambooth_path:   "models/DreamBooth_LoRA/realisticVisionV60B1_v51VAE.safetensors"
+  adapter_lora_path: "models/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_adapter.ckpt"
+  dreambooth_path:   "models/realisticVisionV60B1_v51VAE.safetensors"
 
   inference_config: "configs/inference/inference-v3.yaml"
-  motion_module:    "models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_mm.ckpt"
+  motion_module:    "models/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_mm.ckpt"
 
   controlnet_config: "configs/inference/sparsectrl/latent_condition.yaml"
-  controlnet_path:   "models/SparseCtrl/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_sparsectrl_rgb.ckpt"
+  controlnet_path:   "models/models--guoyww--animatediff/snapshots/fdfe36afa161e51b3e9c24022b0e368d59e7345e/v3_sd15_sparsectrl_rgb.ckpt"
 
   seed: -1
   steps: 25
