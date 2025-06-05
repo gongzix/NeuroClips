@@ -32,7 +32,7 @@ For Neuroclips:
 ```python
 . src/setup.sh
 ```
-For pre-trained AnimateDiffusion, you can follow [this](https://github.com/guoyww/AnimateDiff):
+For the installing intruction of AnimateDiffusion, you can follow [this](https://github.com/guoyww/AnimateDiff):
 ```python
 conda create -n animatediff python==3.10
 conda activate animatediff
@@ -71,7 +71,7 @@ cd Animatediff
 python -m scripts.neuroclips --config configs/NeuroClips/control.yaml
 ```
 
-The pre-trained weights you should prepare are in [here](Animatediff/required_weight.txt).
+The names of pre-trained weights you should prepare are in [here](Animatediff/required_weight.txt) and the weights in huggingface in [here](https://huggingface.co/guoyww/animatediff/tree/main)
 
 ## 🖼️ Reconstruction Demos
 ### *Human Behavior*
@@ -197,9 +197,11 @@ Due to the low-temporal resolution of fMRI (i.e., 2s), a segment of fMRI may inc
 ## BibTeX
 ```
 @article{gong2024neuroclips,
-  title={NeuroClips: Towards High-fidelity and Smooth fMRI-to-Video Reconstruction},
+  title={NeuroClips: Towards high-fidelity and smooth fMRI-to-video reconstruction},
   author={Gong, Zixuan and Bao, Guangyin and Zhang, Qi and Wan, Zhongwei and Miao, Duoqian and Wang, Shoujin and Zhu, Lei and Wang, Changwei and Xu, Rongtao and Hu, Liang and others},
-  journal={arXiv preprint arXiv:2410.19452},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={51655--51683},
   year={2024}
 }
 ```
