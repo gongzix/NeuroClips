@@ -39,6 +39,11 @@ conda activate animatediff
 cd AnimateDiff
 pip install -r requirements.txt
 ```
+
+All weights can be downloaded through:
+```
+bash ./model_download.sh
+```
 ## Train Semantic Reconstructor
 We suggest training the backbone first and then the prior to achieve better Semantic Reconstructor.
 
@@ -70,8 +75,6 @@ conda activate animatediff
 cd Animatediff
 python -m scripts.neuroclips --config configs/NeuroClips/control.yaml
 ```
-
-The names of pre-trained weights you should prepare are in [here](Animatediff/required_weight.txt) and the weights in huggingface in [here](https://huggingface.co/guoyww/animatediff/tree/main)
 
 ## 🖼️ Reconstruction Demos
 ### *Human Behavior*
