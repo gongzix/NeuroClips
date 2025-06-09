@@ -49,7 +49,7 @@ We suggest training the backbone first and then the prior to achieve better Sema
 
 ```python
 conda activate neuroclips
-python src/train_SR.py --subj 1 --batch_size 240 --num_epochs 30 --mixup_pct 1.0 --max_lr 1e-4 --use_text
+python src/train_SR.py --subj 1 --batch_size 720 --num_epochs 30 --mixup_pct 1.0 --max_lr 1e-4 --use_text
 python src/train_SR.py --subj 1 --batch_size 64 --num_epochs 150 --mixup_pct 0.0 --max_lr 3e-4 --use_prior --use_text
 ```
 
